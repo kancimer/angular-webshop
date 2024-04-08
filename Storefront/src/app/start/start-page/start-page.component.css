@@ -1,0 +1,125 @@
+
+.wrapper{
+    width:100%;
+    height:100vh;
+    padding:0px;
+}
+.center-text h3{
+    font-size: 2em;
+    font-weight: 600;
+}
+.center-text p:hover{
+    text-shadow: gray 1px 0 10px;
+    transition-delay: 0.1s ease;
+}
+.center-text p{
+    font-size: 1.5em;
+}
+.center-text{
+   
+  /*position:relative;
+  top:50vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  /*justify-content: center;  Center horizontally */
+  
+  position: relative;
+    top: 50%;
+
+    /*transform: translateY(-50%);  Center vertically */
+    text-align: center; /* Center horizontally */
+}
+.top{
+    background-image: url('../../../assets/images/products/image4.jpg');
+    
+}
+
+.jeans{
+    background-image: url('../../../assets/images/products/image14.jpg');
+    
+}
+
+.outerwear{
+    background-image: url('../../../assets/images/products/image12.jpg');
+    
+}
+
+.footwear{
+    background-image: url('../../../assets/images/products/image10.jpg');
+    
+
+    
+        
+}
+
+.section{
+    /*background-color:black; color:white;
+    width:150px;
+    height:150px;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+    justify-content:space-around;*/
+    background-size: contain; /* Adjust background size as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible; /* Change overflow to hidden */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%; /* Set width to create four equal-sized boxes */
+    /*height: 100%;*/
+    padding:10px;
+    margin:1%;
+    
+    
+}
+.offers{
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+    justify-content:space-around;
+    
+    height:100vh;
+    padding:2% 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90vh;
+    
+}
+
+.section p{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-shadow: gray 1px 0 10px;
+    color:rgb(224, 217, 217);
+    position: relative;
+    top: -15%;
+    
+    text-align: center;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fadein {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .our-clothing {
+    padding:4% 20%;
+    line-height: 2em;
+  }
+
+  .our-clothing h2{
+    text-align: center;
+    margin-bottom: 1em;
+  }

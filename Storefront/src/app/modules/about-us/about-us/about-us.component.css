@@ -1,0 +1,10 @@
+.title{padding: 20px; text-align: center; font-size: 1.5em;}
+.wrapper{
+    height:100vh;
+}
+p{
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+}

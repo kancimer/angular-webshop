@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-product',
   standalone: true,
@@ -20,7 +22,8 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  constructor(private confirmationService:ConfirmationService){}
+  constructor(private confirmationService:ConfirmationService, private router: Router) {}
+  
 @ViewChild('deleteButton') deleteButton: any;
   @Input() product!: Product;
   @Output() edit: EventEmitter<Product> = new EventEmitter<Product>();
@@ -43,9 +46,13 @@ confirmDelete(){
 
 }
 
-openProductPage(){
-  
+/*openProductPage() {
+  // Assuming you have a route named 'product/:productId', where 'productId' is the ID of the product
+  this.router.navigate(['/product-page', this.product.id]); // Replace 'this.product.id' with the actual ID of the product
 }
+//html: (click)="openProductPage()"
+*/
+
 
   ngOnInit(){
     

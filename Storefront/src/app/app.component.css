@@ -1,7 +1,23 @@
 .wrapper{
     height:auto;
-    padding: 20px;
+    padding: 0px;
     width:100%;
     flex-grow:1;
     box-sizing: border-box;
+}
+/*naci nacin da se moze dodati jos ispod back-slike*/
+.header-style{
+    background:transparent;
+}
+.background-image{
+    background-image: url('../assets/banner-photos/banner-swater.jpg');
+    background-size: 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:visible;
+    height: 130vh;
+}
+
+.background-normal{
+    background:transparent
 }

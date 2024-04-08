@@ -1,10 +1,11 @@
-import { Routes } from '@angular/router';
+import { Routes,RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { StartPageComponent } from './start/start-page/start-page.component';
 
 export const routes: Routes = [
     {
-        path:'',
+        path:'home',
         component: HomeComponent,
     },
     {
@@ -12,5 +13,13 @@ export const routes: Routes = [
         loadChildren:()=>import('./modules/about-us/about-us.module')
         .then((m)=>m.AboutUsModule
         ),
+    },
+    {
+        path:'product-page/:productId',
+        component:ProductPageComponent,
+    },
+    {
+        path:'',
+        component:StartPageComponent,
     }
 ];

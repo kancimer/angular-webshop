@@ -1,13 +1,13 @@
 
 <div class="column gap-1 wrapper">
-    <img [src]="product.image" alt="Product Thumbnail" (click)="openProductPage()"/>
-    <h2 class="title" (click)="openProductPage()">{{product.name}}</h2>
+    <img [src]="product.image" alt="Product Thumbnail" />
+    <h2 class="title" >{{product.name}}</h2>
     <div class="row gap-05">
         <span class="price-label"></span>
         <span class="price">{{product.price }} EUR</span>
     </div>
     <p-rating [readonly]="true" iconCancelClass="hidden " [(ngModel)]="product.rating" ></p-rating>
-<div class="row">
+<div class="row btns">
     <button type="button" pButton icon="pi pi-pencil" (click)="editProduct()" 
     label="Edit"></button>
    <button type="button" class="p-button-danger" pButton icon="pi pi-trash" (click)="confirmDelete()" 
